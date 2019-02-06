@@ -1,0 +1,12 @@
+<h2>Post Show</h2>
+
+
+Title: <%= @post.title %>
+<br>
+URL: <%= @post.url %>
+<br>
+Content: <%= @post.content %>
+<br><br>
+
+<a href="<%=new_sub_post_url(@post.sub_id)%>"> Back to sub </a><br>
+<a href="<%=edit_post_url(@post)%>"> Edit post </a>

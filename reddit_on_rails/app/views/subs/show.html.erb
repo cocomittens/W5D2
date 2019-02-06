@@ -1,0 +1,11 @@
+<h2><%= @sub.title %></h2>
+
+<ul>
+<% @sub.posts.each do |post| %>
+  <li><a href="<%= post_url(post) %>">"<%= post.title %>"</a></li>
+<% end %>
+</ul>
+
+<a href="<%= new_sub_post_url(@sub) %>">Add Post</a><br>
+<a href="<%= subs_url %>">Back to subs index</a><br>
+<a href="<%= edit_sub_url(@sub) %>">Edit Sub</a>
